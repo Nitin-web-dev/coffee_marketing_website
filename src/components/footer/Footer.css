@@ -1,0 +1,175 @@
+footer {
+    background-color: #181e23;
+}
+
+.upperFooterSection {
+    border-bottom: 1px solid #5a646d48;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    padding: 0 40px;
+}
+
+.digitalMarketingServicesSide, .industriesWeServeSide  {
+    padding: 30px;
+    /* border: 1px solid #fff; */
+  
+}
+
+.digitalMarketingServicesSide > h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.digitalMarketingServicesSide > ul {
+    color: #fff;
+    font-weight: 500;
+    columns: 2;
+    column-gap: 50px;
+    line-height: 40px;
+}
+
+.digitalMarketingServicesSide > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.industriesWeServeSide > h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.industriesWeServeSide > ul {
+    color: #fff;
+    font-weight: 500;
+    columns: 2;
+    column-gap: 50px;
+    line-height: 40px;
+}
+
+.industriesWeServeSide > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.LowerFooterSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#fff;
+}
+
+
+
+
+
+.cpyrt {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #101418;
+}
+.cpyrt > span {
+    color:rgb(253, 134, 112)
+}
+
+
+
+
+/* ///// mobile view start  */
+@media (max-width: 868px) {
+
+    footer {
+        background-color: #181e23;
+        width: 100vw;
+        margin-top: 120px;
+    }
+    
+    .upperFooterSection {
+    
+        flex-direction: column;
+       
+    }
+    
+
+    
+    .digitalMarketingServicesSide > h2 {
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .digitalMarketingServicesSide > ul {
+    
+        margin: 0;
+        padding: 0;
+    }
+    
+    .digitalMarketingServicesSide > ul > li > a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .industriesWeServeSide > h2 {
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .industriesWeServeSide > ul {
+        color: #fff;
+        font-weight: 500;
+        columns: 2;
+        column-gap: 50px;
+        line-height: 40px;
+    }
+    
+    .industriesWeServeSide > ul > li > a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    
+    .LowerFooterSection {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        color:#fff;
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    
+    
+    
+    
+    .cpyrt {
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        background-color: #101418;
+    }
+    .cpyrt > span {
+        color:rgb(253, 134, 112)
+    }
+    
+    
+
+}

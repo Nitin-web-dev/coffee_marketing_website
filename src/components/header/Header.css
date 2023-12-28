@@ -1,0 +1,187 @@
+/* ////header start /// */
+header {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* // logo  */
+.logo {
+  background-color: #c4c0c049;
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+/* // navigation area  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* mobile menu start */
+
+.mobilesection {
+  
+  position: relative;
+}
+.bars {
+  cursor: pointer;
+  display: none;
+}
+.mobileMenu {
+  position: absolute;
+  top:100%;
+  transform: translate(-50%);
+
+  width: max-content;
+ 
+  min-width: 100vw;
+  background-color: #fffafa;
+  display: none;
+
+  
+}
+.mobileMenu > ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+}
+.mobileMenu > ul > li {
+  width: 100%;
+}
+
+.mobileMenu > ul > li > a,
+.mobileMenu > ul > li > span {
+  display: block;
+ 
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s ease;
+}
+.mobileMenu > ul > li > a:hover {
+  color: #f06c1b;
+  background-color: #eee8e8;
+}
+
+.MenuOpen {
+  display: block;
+}
+
+@media (max-width: 868px) {
+  .bars {
+    display: block;
+  }
+
+  .webMenu {
+    display: none;
+  }
+}
+/* mobile menu end */
+nav > .webMenu > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+nav > .webMenu > ul > li {
+  list-style-type: none;
+}
+nav > .webMenu > ul > li > a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s ease;
+}
+nav > .webMenu > ul > li > a:hover {
+  color: #f06c1b;
+}
+
+/* // drobdown start  */
+
+/* Dropdown Button */
+/* .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 560px;
+  column-gap: 20px;
+  column-count: 2;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 300;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #dddddda8;
+  color: #f06c1b;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+/* // dropdown end  */
+
+/* // button get quote  */
+.getaQuoteBtn {
+  cursor: pointer;
+  border: transparent;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  background-color: #f17426;
+  animation: btnbgshodowpulse;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  color: #fff;
+  font-weight: 900;
+}
+
+@keyframes btnbgshodowpulse {
+  0% {
+    box-shadow: 0 0 0 0 #fd7e2f28;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #fd7e2f28;
+  }
+}
+/* //// header end //// */
